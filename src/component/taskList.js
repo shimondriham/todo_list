@@ -1,9 +1,18 @@
 import React from 'react'
+import TaskItem from './taskItem'
 
-function TaskList() {
+function TaskList(props) {
     return (
         <div>
-            TaskList
+          <h2> Tasks you added:</h2>
+{
+    props.taskAr.map(item =>{
+        return(
+            <TaskItem removeSingleTasks={props.removeSingleTasks}  key={item.id} item={item}/>
+        )
+    })
+}
+         
         </div>
     )
 }
