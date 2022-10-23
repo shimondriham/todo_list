@@ -1,9 +1,10 @@
 import './App.css';
+import AppTodo from './component/appTodo';
 
 function App() {
   return (
-    <div className="App">
-     <h1>start</h1>
+    <div className="">
+     <AppTodo/>
     </div>
   );
 }
